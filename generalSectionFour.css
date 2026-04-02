@@ -1,0 +1,38 @@
+	.sectionFour {
+    	padding: 3.5% 0%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	background-color: #ECE5DC;}
+
+	.sectionFourContent {
+		margin: 0 10%;}
+
+	.sectionFour h1 {font-size: 2vw;}
+	.sectionFour p {font-size: 1vw;}
+
+	.sectionFourTable {
+		width: 100%;
+		border-collapse: collapse;}
+
+	.sectionFourTable th {
+    	color: white;
+    	background-color: #013715;
+    	padding: 2.5%;
+		text-align: center;}
+
+	.sectionFourTable td {
+    	color: white;
+    	background-color: #013715;
+   		padding: 2.5%;
+		width: 33.33%;
+		vertical-align: top;}
+
+	.sectionFourTable td h1 {
+		margin-bottom: 2%;}
+
+	.sectionFourTable tr + tr td {
+    	border-top: clamp(0.5rem, 2vw, 1.5rem) solid #ECE5DC;}
+
+	.sectionFourTable td + td {
+    	border-left: clamp(0.5rem, 2vw, 1.5rem) solid #ECE5DC;}

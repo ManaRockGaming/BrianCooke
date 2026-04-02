@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Brian Cooke for Charleston County</title>
+<link rel="icon" type="image/x-icon" href="Search Icon.jpg">
+<link rel="stylesheet" type="text/css" href="general.css" />
+<link rel="stylesheet" type="text/css" href="generalSectionHeader.css" />
+<link rel="stylesheet" type="text/css" href="generalSectionOne.css" />
+<link rel="stylesheet" type="text/css" href="generalSectionTwo.css" />
+<link rel="stylesheet" type="text/css" href="generalSectionThree.css" />
+<link rel="stylesheet" type="text/css" href="generalSectionFour.css" />
+<link rel="stylesheet" type="text/css" href="generalSectionFooter.css" />
+<style>
+</style>
+</head>
+<body>
+
+
+<header>
+    
+    <div class="homepageHeader">
+        <div class="homepageTrapezoid"></div>
+    </div>
+
+    <div class="homepageNavigation">
+        <div class="animatedLink"><a href="">ABOUT</a></div>
+        <div class="animatedLink"><a href="">ISSUES</a></div>
+        <div class="animatedLink"><a href="">CHARLESTON COUNTY DISTRICT 8</a></div>
+        <div class="animatedLink"><a href="">ENDORSEMENTS</a></div>
+        <div class="animatedLink"><a href="">VOLUNTEER</a></div>
+        <div class="animatedLink"><a href="">CONTACT</a></div>
+        <div class="animatedLink"><a href="">DONATE</a></div>
+    </div>
+</header>
+
+
+
+
+<article>
+
+    <!-- SECTION ONE - A VISION FOR CHARLESTON COUNTY -->
+    <div class="sectionOne">
+
+        <div class="sectionOneContent">
+        <div class="sectionOneLeftSide">
+            <video class="pictureFramedVideo" controls>
+                <source src="VideoOfBrianCooke.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="sectionOneRightSide">
+            <h1>A Vision For Charleston County</h1>
+            <p>Charleston County should be a place where the people who build it, teach in it, serve in it, and raise families in it, can afford to stay in it.
+                Growth should respect our land, provide adequate infrastructure , and affordable neighborhoods that serves the people and not speculators.
+                We believe in a county government that is transparent, accountable to the people, and not to those beholden to other interests.
+                Our vision is simple.
+                Fix what's broken, and build a better future, that works for everyone.
+            </p>
+            <div class="animatedLinkBlack"><a href="" style="font-size: 1.5vw;"><i>Learn More...</i></a></div>
+        </div>
+        </div>
+    </div>
+
+    <!-- SECTION TWO - THE FUTURE OF CHARLESTON COUNTY -->
+    <div class="sectionTwo">
+        <div class="sectionTwoContent">
+        
+            <table class="sectionTwoTable">
+                <tr>
+                    <th colspan="2"><h1>The Future of Charleston County</h1></th>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Stewards of the Land</h1>
+                        <li>Enforce a targeted development moratorium where infrastructure is overwhelmed.</li>
+                        <li>Expand the Greenbelt program.</li>
+                        <li>Cost effective and sustainable growth.</li>
+                        <li>Protect floodplains and tree canopy as public infrastructure.</li>
+                        <li>Require growth to pay its full cost to the public.</li>
+                    </td>
+                    <td>
+                        <h1>Infrastructure</h1>
+                        <li>Create and guide infrastructure concurrency.</li>
+                        <li>Roads and schools to support growth.</li>
+                        <li>Launch a Streetlight & Sidewalks Program.</li>
+                        <li>Expand and modernize public transportation.</li>
+                        <li>Use development impact fees to fund improvements.</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Power to the People</h1>
+                        <li>Take zero corporate/developer money.</li>
+                        <li>Public oversight of budgets and institutions.</li>
+                        <li>Community driven democracy.</li>
+                        <li>Publish accessible financial and development data.</li>
+                        <li>End the "Good old Boy" network.</li>
+                    </td>
+                    <td>
+                        <h1>Investing Locally</h1>
+                        <li>Land and housing for locals.</li>
+                        <li>Growth that pays its way.</li>
+                        <li>Local wealth, local ownership.</li>
+                        <li>Public investment in our farms, libraries, marketplaces and schools.</li>
+                        <li>Tax policies that favor people over corporate interests.</li>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <!-- SECTION THREE - VOLUNTEER FORM -->
+    <div class="sectionThree">
+        <div class="sectionThreeContent">
+
+        <div class="sectionThreeLeftSide">
+
+            <form name="gform" id="gform" action=" https://docs.google.com/forms/d/e/1FAIpQLScZ54NmRnBTJSXMVc67lH7STkt7pUJlDYWOvxgx1Y0dVZcJtQ/formResponse" method="POST"  target="hidden_iframe" onsubmit="submitted=true;">        
+            <div class="inputForm"> 
+                <table id="formContent" style="width: 100%;">
+                    <!-- Questions will be inserted here dynamically -->
+                </table>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { nextForm(); }"></iframe>
+                <div id="navButtons" style="width: 100%;">
+                    </br>
+                    <button type="button" class="inputFormButton" id="backBtn" onclick="prevForm()" style="display:none;">&lt;Join The Movement</button>
+                    <button type="button" class="inputFormButton" id="nextBtn" onclick="nextForm()">Join The Movement</button>
+                    <!-- <input type="submit" class="inputFormButton" id="submitBtn" value="Join The Vision" style="display:none; border-radius: 10px;"> -->
+                </div>
+                </br>
+                <!-- <span style="font-style: italic;"><a href="">Bulldog Democrat Privacy & Cybersecruity Policy</a></span> -->
+            </div>
+            </form>
+
+        </div>
+
+        <div class="sectionThreeRightSide">
+            
+        </div>
+
+        </div>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        var submitted = false;
+        var currentSet = 0;
+        var loadedSets = [];
+        var questionSets = [
+            // First Set
+            `
+            <tr>
+                <th colspan="2">
+                    <b>Join The Vision</b>
+                </th>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    <h1>First Name:</h1>
+                    <input type="text" name="entry.1009248299" maxlength="30" class="inputFormInput" placeholder="">
+                </td>
+                <td style="width: 50%;">
+                    <h1>Last Name:</h1>
+                    <input type="text" name="entry.335112227" maxlength="30" class="inputFormInput" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%;" colspan="2">
+                    <h1>Email:</h1>
+                    <input type="text" name="entry.1028639125" maxlength="30" class="inputFormInput" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%;" colspan="2">
+                    <h1>Phone Number:</h1>
+                    <input type="text" name="entry.729883413" maxlength="30" class="inputFormInput" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%;" colspan="2">
+                    <h1>Address:</h1>
+                    <input type="text" name="entry.729883413" maxlength="30" class="inputFormInput" placeholder="">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 50%;">
+                    <h1>City:</h1>
+                    <input type="text" name="entry.1009248299" maxlength="30" class="inputFormInput" placeholder="">
+                </td>
+                <td style="width: 50%;">
+                    <h1>Zip:</h1>
+                    <input type="text" name="entry.335112227" maxlength="30" class="inputFormInput" placeholder="">
+                </td>
+            </tr>
+            
+            `,
+        ];
+
+        function updateForm() {
+            // Inject the set if not already added
+            if (!loadedSets.includes(currentSet)) {
+                const wrappedHtml = `<tbody class="formStep" id="formStep${currentSet}">${questionSets[currentSet]}</tbody>`;
+                $("#formContent").append(wrappedHtml);
+                loadedSets.push(currentSet);
+            }
+
+            // Hide all sets
+            $(".formStep").hide();
+
+            // Show current set
+            $(`#formStep${currentSet}`).show();
+
+            // Toggle nav buttons
+            $("#backBtn").toggle(currentSet > 0);
+            $("#nextBtn").toggle(currentSet < questionSets.length - 1);
+            $("#submitBtn").toggle(currentSet === questionSets.length - 1);
+        }
+
+        function nextForm() {
+            if (currentSet < questionSets.length - 1) {
+                currentSet++;
+                updateForm();
+            }
+        }
+
+        function prevForm() {
+            if (currentSet > 0) {
+                currentSet--;
+                updateForm();
+            }
+        }
+
+        $(document).ready(function () {
+            updateForm(); // Show first step
+        });
+    </script>
+
+
+
+    <!-- SECTION FOUR - PAUSE. PLAN. PROTECT. -->
+    <div class="sectionFour">
+        <div class="sectionFourContent">
+            <table class="sectionFourTable">
+                <tr>
+                    <th colspan="3"><h1>PAUSE. PLAN. PROTECT.</h1></th>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>PAUSE</h1>
+                        <p>A lack of infrastructure and overdevelopment has destroyed our quality of life. We need a short moratorium on cluster developments.</p>
+                    </td>
+                    <td>
+                        <h1>PLAN</h1>
+                        <p>We need a comprehensive plan to address our lack of infrastructure and our lack of affordable housing. We deserve safe streets with sidewalks and streetlights.</p>
+                    </td>
+                    <td>
+                        <h1>PROTECT</h1>
+                        <p>We need to protect our wildlife. We need to protect the rural nature of our district and enforce the urban growth boundaries.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="sectionFooter">
+        <div class="sectionFooterContent">
+            <table>
+                <tr>
+                    <td><h1>Brian Cooke for Charleston County Distirct 7</h1></td>
+                </tr>
+                <tr>
+                    <td><h1>Email:</h1></td>
+                </tr>
+                <tr>
+                    <td><h1>XXXXXXX@gmail.com</h1></td>
+                </tr>
+                <tr>
+                    <td><h1>Mailing Address</h1></td>
+                </tr>
+                <tr>
+                    <td><h1>PO BOX</h1></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+</article>
+
+<!-- FOOTER -->
+<footer>
+   
+</footer>
+
+
+
+</body>
+
+
+
+
+
+</html>

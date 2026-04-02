@@ -1,0 +1,50 @@
+/* SECTION THREE */
+	.sectionThree {
+		padding: 3.5% 0%;
+    	background-image: linear-gradient(rgba(1,55,21,0.5), rgba(1,55,21,0.5)), url('WestAshleyPark.webp');
+		background-size: cover;
+   		background-position: center;
+    	background-repeat: no-repeat;}
+
+	.sectionThreeContent {
+		display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+		margin: 0 10%;}
+
+
+	.sectionThreeLeftSide {
+    	width: 60%;
+		border: clamp(0.5rem, 2vw, 1.5rem) solid white;
+		border-radius: 4px;
+  		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);}
+
+	.sectionThreeRightSide {
+    	width: 40%;
+		background-color: red;}
+
+
+/*#region INPUT FORM SECTION*/
+	.inputForm {border: none; font-family: FuturaDisplay; text-align: center; background-color: #ECE5DC; width: 100%;}
+		.inputForm table {width: 100%; }
+	
+		.inputForm th {font-size: 3vw;}
+		.inputForm td h1 {font-size: 1.5vw;}
+	
+		.inputForm td {border: none; padding: 1% 2%; text-align: left;}
+		.inputForm .inputFormInput {width:100%; height:10%; font-size:1.25vw; border-radius: 10px;}
+
+		.inputFormButton {background-color: white; color: black; font-size: 1vw; font-family: FuturaDisplay; border: 0.3vw solid black; padding: 0.8vw 1.3vw; border-radius: 0px; cursor: pointer; display: none;}
+		.inputFormButton:hover { background-color: #19421A; color: white;}
+
+		.inputFormThanks {margin: 0% 10% 0% 10%; border: none; padding: 0% 1%; font-family: FuturaDisplay; text-align: center; font-size: 2.5vw; font-style: italic; color: white;}
+
+
+		.pictureFramedThree {
+  		width: 100%;
+  		height: auto;
+  		border: 1.5rem solid white;
+  		background: white;
+  		border-radius: 4px;
+	
+  		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);}
