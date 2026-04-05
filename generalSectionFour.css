@@ -9,7 +9,7 @@
 		margin: 0 10%;}
 
 	.sectionFour h1 {font-size: 2vw;}
-	.sectionFour p {font-size: 1vw;}
+	.sectionFour p {font-size: 1.5vw;}
 
 	.sectionFourTable {
 		width: 100%;
@@ -25,7 +25,6 @@
     	color: white;
     	background-color: #013715;
    		padding: 2.5%;
-		width: 33.33%;
 		vertical-align: top;}
 
 	.sectionFourTable td h1 {

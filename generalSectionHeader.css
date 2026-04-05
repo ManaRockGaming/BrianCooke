@@ -6,6 +6,16 @@
     	width: 100%;
    		background: linear-gradient(to bottom, #13BE1F 0%, #13BE1F 0%, #ECE5DC 80%);}
 
+
+	.homepageHeaderCampaignImage {
+    position: absolute;
+    left: 7.5%; /* distance from left edge */
+    top: 35%;  /* start at vertical center */
+    transform: translateY(-50%); /* truly center vertically */
+    height: 20vh; /* scale logo size */
+    z-index: 2;  /* above trapezoid */
+}
+
 	.homepageTrapezoid {
     	position: absolute;
     	top: 0;
@@ -18,19 +28,63 @@
     	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
     	z-index: 0;}
 
+
+
+
 	.homepageNavigation {
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-    	height: 20%;
-    	background: linear-gradient(to bottom, #013715 0%, #013715 30%, rgba(236, 229, 220, 0) 100%);
-    	z-index: 1;
-    	display: flex; align-items: center; justify-content: center; gap: 20px; padding: 20px; text-align: right; flex-wrap: wrap; overflow: hidden;}
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to bottom, #013715 0%, #013715 30%, rgba(236, 229, 220, 0) 100%);
+    z-index: 1;
+
+    display: flex;
+    align-items: center;       /* vertically center nav row */
+    padding: 0 2vw; 
+}
+
+
+	.homepageNavigationContainer {
+		display: flex;
+    flex-wrap: nowrap;          /* single line */
+    justify-content: flex-end;  /* align links to the right */
+    align-items: center;
+    gap: 2vw;                   /* space between links scales */
+    width: 100%;
+    overflow-x: hidden;         /* prevent links from overflowing */
+	}
+	
 
 	.homepageNavigation h1 {
 		color: white; 
 		text-align: right; 
 		margin: 0; 
-		font-size: 1.5rem;}
+		font-size: 1.5vw;
+		white-space: nowrap;                  /* prevent breaking lines */
+		}
 	
+		
+
+
+.animatedLinkNavigation a {
+		text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    position: relative;}
+	
+	.animatedLinkNavigation a::after {
+		content: "";
+    	position: absolute;
+    	left: 0;
+    	right: 0;
+    	bottom: 0px;
+    	height: 1.5px;
+    	background: white;
+    	transform: scaleX(0);
+    	transform-origin: center;
+    	transition: transform 0.3s ease;}
+
+	.animatedLinkNavigation a:hover::after {
+		transform: scaleX(1);}
