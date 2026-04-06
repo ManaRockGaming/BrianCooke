@@ -2,26 +2,36 @@
 	.homepageHeader {
     	position: relative;
     	overflow: hidden;
-    	height: 85vh;           
+    	height: clamp(250px, 40vw, 85vh); /* key fix */           
     	width: 100%;
    		background: linear-gradient(to bottom, #13BE1F 0%, #13BE1F 0%, #ECE5DC 80%);}
 
+	.homepageBackground {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	height: 20%;
+    	background: linear-gradient(to bottom, #013715 0%, #013715 50%, rgba(236, 229, 220, 0) 100%);
+    	z-index: 1;
+    	display: flex;
+    	align-items: center;
+    	padding: 0 2vw; }
 
 	.homepageHeaderCampaignImage {
-    position: absolute;
-    left: 7.5%; /* distance from left edge */
-    top: 35%;  /* start at vertical center */
-    transform: translateY(-50%); /* truly center vertically */
-    height: 20vh; /* scale logo size */
-    z-index: 2;  /* above trapezoid */
-}
+    	position: absolute;
+    	left: 7.5%;
+    	top: 35%;
+    	transform: translateY(-50%);
+    	height: clamp(60px, 10vw, 160px);
+    	z-index: 2;}
 
 	.homepageTrapezoid {
     	position: absolute;
     	top: 0;
     	left: 45%;
     	width: 60%;
-    	height: 85vh;
+    	height: clamp(250px, 40vw, 85vh); /* key fix */
     	background-image: url('PictureOfBrianCooke.png');
    		background-position: center top 40%;
     	background-size: cover;
@@ -31,48 +41,36 @@
 
 
 
-	.homepageNavigation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background: linear-gradient(to bottom, #013715 0%, #013715 30%, rgba(236, 229, 220, 0) 100%);
-    z-index: 1;
-
-    display: flex;
-    align-items: center;       /* vertically center nav row */
-    padding: 0 2vw; 
-}
+/* HOMEPAGE NAVIGATION */
 
 
 	.homepageNavigationContainer {
+    	position: absolute;
+		top: clamp(4px, 1.2vw, 20px);
+		right: 3%;
 		display: flex;
-    flex-wrap: nowrap;          /* single line */
-    justify-content: flex-end;  /* align links to the right */
-    align-items: center;
-    gap: 2vw;                   /* space between links scales */
-    width: 100%;
-    overflow-x: hidden;         /* prevent links from overflowing */
-	}
-	
+    	flex-wrap: nowrap;
+    	justify-content: flex-end;
+    	align-items: center;
+    	gap: 2vw;
+    	width: 100%;
+		z-index: 4;}
 
-	.homepageNavigation h1 {
-		color: white; 
-		text-align: right; 
-		margin: 0; 
-		font-size: 1.5vw;
-		white-space: nowrap;                  /* prevent breaking lines */
-		}
-	
+	.homepageNavigationLogo {
+		position: absolute;
+		top: 1%;
+		left: 3%;
+		z-index: 3;}
 		
+/* ANIMATED LINKS */
 
-
-.animatedLinkNavigation a {
+	.animatedLinkNavigation a {
 		text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    position: relative;}
+    	color: white;
+    	display: inline-block;
+    	position: relative;
+		font-size: 1.5vw;}
+		
 	
 	.animatedLinkNavigation a::after {
 		content: "";
