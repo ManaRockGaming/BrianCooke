@@ -13,7 +13,8 @@
 
 	.sectionFourTable {
 		width: 100%;
-		border-collapse: collapse;}
+		border-collapse: collapse;
+		table-layout: fixed;}
 
 	.sectionFourTable th {
     	color: white;
@@ -35,3 +36,10 @@
 
 	.sectionFourTable td + td {
     	border-left: clamp(0.5rem, 2vw, 1.5rem) solid #ECE5DC;}
+
+
+
+/* VOLUNTEER ONLY */
+
+	.sectionFourTable td li {
+		margin-left: 1.5rem;}

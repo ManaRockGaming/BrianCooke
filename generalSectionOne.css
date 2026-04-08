@@ -28,3 +28,38 @@
   		border-radius: 4px;
 		transform: rotate(-6deg);
   		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);}
+
+
+/* BIOGRAPHY */
+
+.biographySectionOneContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	margin: 0 10%;
+}
+
+
+
+.biographySectionOneLeftSide {
+    width: 60%; /* text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.biographySectionOneRightSide {
+    width: 30%; /* video */
+    display: flex;
+    justify-content: center;
+}
+
+.biographyPictureFramedVideo {
+    width: 100%;
+  		height: auto;
+  		border: clamp(0.5rem, 2vw, 1.5rem) solid white;
+  		background: white;
+  		border-radius: 4px;
+		transform: rotate(-6deg);
+  		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);
+}

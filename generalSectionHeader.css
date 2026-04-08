@@ -86,3 +86,7 @@
 
 	.animatedLinkNavigation a:hover::after {
 		transform: scaleX(1);}
+
+
+	.animatedLinkNavigation a.active::after {
+    	transform: scaleX(1);}

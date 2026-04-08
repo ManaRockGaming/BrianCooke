@@ -48,3 +48,46 @@
 
 	.sectionTwoTable td + td {
     	border-left: clamp(0.5rem, 2vw, 1.5rem) solid #ECE5DC;}
+
+
+/* ISSUES */
+
+	.issuesSectionTwoTable {
+    	width: 100%;
+		border-collapse: collapse;
+		background: #222;}
+
+	.issuesSectionTwoTable th {
+		text-align: center;
+    	vertical-align: top;
+    	color: black;
+    	padding: 2.5%;
+		background-color: #ECE5DC;
+		border: none;
+		box-shadow: inset 0 0 0 2px #013715;}
+
+	.issuesSectionTwoTable td {
+		width: 50%;
+    	vertical-align: top;
+    	color: black;
+    	padding: 2.5%;
+		background-color: #ECE5DC;
+		border: none;
+		border-radius: 4px;
+		box-shadow: inset 0 0 0 2px #013715;}
+
+	.issuesSectionTwoTable th h1 {
+		font-size: 3vw;
+	}
+
+	.issuesSectionTwoTable td h1 {
+		margin-bottom: 2%;}
+
+	.issuesSectionTwoTable td li {
+		margin-left: 1.5rem;}
+
+	.issuesSectionTwoTable tr + tr td {
+    	border-top: clamp(0.5rem, 2vw, 1.5rem) solid white;}
+
+	.issuesSectionTwoTable td + td {
+    	border-left: clamp(0.5rem, 2vw, 1.5rem) solid white;}
