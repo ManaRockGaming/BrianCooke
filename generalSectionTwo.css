@@ -86,8 +86,4 @@
 	.issuesSectionTwoTable td li {
 		margin-left: 1.5rem;}
 
-	.issuesSectionTwoTable tr + tr td {
-    	border-top: clamp(0.5rem, 2vw, 1.5rem) solid white;}
-
-	.issuesSectionTwoTable td + td {
-    	border-left: clamp(0.5rem, 2vw, 1.5rem) solid white;}
+	
