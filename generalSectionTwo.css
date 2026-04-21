@@ -11,8 +11,10 @@
 
 	.sectionTwoTable {
     	width: 100%;
-		border-collapse: collapse;
-		background: #222;}
+		
+	
+		border-collapse: separate;
+    	border-spacing: clamp(0.5rem, 2vw, 1.5rem);}
 
 	.sectionTwoTable th {
 		text-align: center;
@@ -21,7 +23,9 @@
     	padding: 2.5%;
 		background-color: #ECE5DC;
 		border: none;
-		box-shadow: inset 0 0 0 2px #013715;}
+		box-shadow: inset 0 0 0 2px #013715;
+		
+		}
 
 	.sectionTwoTable td {
 		width: 50%;
@@ -43,19 +47,15 @@
 	.sectionTwoTable td li {
 		margin-left: 1.5rem;}
 
-	.sectionTwoTable tr + tr td {
-    	border-top: clamp(0.5rem, 2vw, 1.5rem) solid #ECE5DC;}
-
-	.sectionTwoTable td + td {
-    	border-left: clamp(0.5rem, 2vw, 1.5rem) solid #ECE5DC;}
+	
 
 
 /* ISSUES */
 
 	.issuesSectionTwoTable {
     	width: 100%;
-		border-collapse: collapse;
-		background: #222;}
+		border-collapse: separate;
+    	border-spacing: clamp(0.5rem, 2vw, 1.5rem);}
 
 	.issuesSectionTwoTable th {
 		text-align: center;
