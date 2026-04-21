@@ -13,32 +13,21 @@
     .sectionOne p {font-size: 2vw; margin-bottom: 1vw;}
 
 	.sectionOneLeftSide {
-    	width: 32.5%;
+    	width: 30%;
     	display: flex;
     	justify-content: center;}
 
 	.sectionOneRightSide {
     	width: 60%;}
 
-		.videoFrame {
-    width: 100%;
-    border: clamp(0.5rem, 2vw, 1.5rem) solid white;
-    background: white;
-    border-radius: 4px;
-    transform: rotate(-6deg);
-
-    /* 👇 shadow goes here instead */
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2),
-                0 18px 35px rgba(0,0,0,0.3);
-}
-
-.pictureFramedVideo {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 2px; /* slight inner rounding */
-}
-
+	.pictureFramedVideo {
+  		width: 100%;
+  		height: auto;
+  		border: clamp(0.5rem, 2vw, 1.5rem) solid white;
+  		background: white;
+  		border-radius: 4px;
+		transform: rotate(-6deg);
+  		box-shadow: 0 6px 15px rgba(0,0,0,0.2), 0 18px 35px rgba(0,0,0,0.3);}
 
 
 /* BIOGRAPHY */

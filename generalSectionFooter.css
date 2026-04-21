@@ -6,7 +6,9 @@
     	margin: 0 10%;}
 
 	.sectionFooterTable {
-    	padding: 3.5% 0% 0% 0%;}
+    	padding: 3.5% 0% 0% 0%;
+		
+		}
 
 	.sectionFooterTable th {
     	padding: 0% 0% 1% 0%;
@@ -48,7 +50,8 @@
 
 /* PAID FOR BY */
 	.sectionPaidForBy {
-    	background-color: #013715;
+    	margin-top: -1px;
+		background-color: #013715;
 		color: white;}
 
 	.sectionPaidForByContent {
