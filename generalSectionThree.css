@@ -31,7 +31,7 @@
 		.inputForm th {font-size: 3vw;}
 		.inputForm td h1 {font-size: 1.5vw;}
 	
-		.inputForm td {border: none; padding: 1% 2%; text-align: left; word-wrap: break-word;}
+		.inputForm td {padding: 1% 3%; text-align: left; word-wrap: break-word;}
 		.inputForm .inputFormInput {width:100%; height:10%; font-size:1.25vw; border-radius: 10px;}
 
 		#navButtons .inputFormButton {
